@@ -1,0 +1,23 @@
+# requirements.txt
+fastapi
+fastmcp
+uvicorn
+websockets
+jinja2
+requests
+anthropic
+voyageai
+sqlalchemy
+psycopg2-binary
+pydantic
+python-dotenv
+gradio
+streamlit
+uv 
+tiktoken
+newsapi-python
+mcp[cli]
+numpy
+openai
+pydantic-ai
+pydantic-ai-slim[mcp]

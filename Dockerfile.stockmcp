@@ -1,0 +1,22 @@
+# Dockerfile.mcp
+FROM python:3.13-slim
+
+WORKDIR /workspace
+RUN mkdir -p /workspace/src
+
+# Install Node.js and npm
+RUN apt-get update && apt-get install -y curl && \
+    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY ./src/stock_mcp_server.py ./src/
+
+# Expose the port
+EXPOSE 8001
+
+CMD ["python", "src/stock_mcp_server.py"]
+
