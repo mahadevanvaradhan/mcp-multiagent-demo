@@ -21,7 +21,6 @@ This repo deals with multiple API built with MCP severs and communication to Cha
 
 Here are some example images from the `images` folder:
 
-![Example 1](./images/example1.png)
-![Example 2](./images/example2.png)
-![Example 3](images/example3.png)
-![Example 4](images/example4.png)
+![Example 1](./images/example_1.png)
+![Example 2](./images/example_2.png)
+![Example 3](images/example_3.png)
